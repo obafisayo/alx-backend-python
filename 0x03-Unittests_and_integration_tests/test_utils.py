@@ -49,3 +49,13 @@ class TestGetJson(unittest.TestCase):
         mock.assert_called_once()
         patcher.stop()
 
+
+class TestMemoize(unittest.TestCase):
+    """ test class to tes utils.memoize"""
+
+    def test_memoize(self):
+        """ Tests the function when calling a_property twice,
+        the correct result is returned but a_method is only
+        called once using assert_called_once
+        """
+
